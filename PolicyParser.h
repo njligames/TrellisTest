@@ -126,8 +126,6 @@ private:
 class PolicyParser {
 public:
     
-    
-    
     static PolicyParser *const get();
     static bool destroy();
 

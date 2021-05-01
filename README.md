@@ -32,7 +32,7 @@ Suppose that in addition to generating quotes from The Colonel Insurance, we als
 Suppose that instead of being consumed by a support team member, the list of questions was going to be used to power a programmatic, online interview flow. Would there be anything you would change in your solution?
 ```
 
-I implemented sample code that shows how I would architect this.  When running `PolicyParser::printRuleErrors`, you pass in a `RuleType` strategy. The strategy runs an overloaded function to either print out the invalid parameters for people or another strategy that fills up a POD class of the invalid parameters so that it can be used in another process.
+I implemented sample code that shows how I would architect this.  When running `PolicyParser::printRuleErrors`, you pass in a `RuleType` strategy. The strategy runs an overloaded function to either print out the invalid parameters for people. There is also another strategy, which can be used to fill up a POD class of the invalid parameters so that it can be used in another process.
 
 ### How to build
 ```
